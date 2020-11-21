@@ -69,6 +69,7 @@ def main():
 
         surface.fill((255, 255, 255))
 
+        # rysowanie wszystkich okręgów, które zostały narysowane
         for circle in circles:
             circle.draw(surface)
 
@@ -79,7 +80,6 @@ def main():
         # rysowanie kursora
         pygame.draw.circle(surface, (0, 0, 0), (position_x, position_y), radius)
 
-        # rysowanie wszystkich okręgów, które zostały narysowane
         if drawing:
             circles.append(Circle(position_x, position_y, radius, color))
 
